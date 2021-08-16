@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aurora_Boreas\\source\\repos\\PmodLogger\\PmodLogger.csproj": {}
+    "C:\\Users\\Aurora_Boreas\\Desktop\\PMod-Logger\\PmodLogger\\PmodLogger.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aurora_Boreas\\source\\repos\\PmodLogger\\PmodLogger.csproj": {
+    "C:\\Users\\Aurora_Boreas\\Desktop\\PMod-Logger\\PmodLogger\\PmodLogger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aurora_Boreas\\source\\repos\\PmodLogger\\PmodLogger.csproj",
+        "projectUniqueName": "C:\\Users\\Aurora_Boreas\\Desktop\\PMod-Logger\\PmodLogger\\PmodLogger.csproj",
         "projectName": "PmodLogger",
-        "projectPath": "C:\\Users\\Aurora_Boreas\\source\\repos\\PmodLogger\\PmodLogger.csproj",
+        "projectPath": "C:\\Users\\Aurora_Boreas\\Desktop\\PMod-Logger\\PmodLogger\\PmodLogger.csproj",
         "packagesPath": "C:\\Users\\Aurora_Boreas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aurora_Boreas\\source\\repos\\PmodLogger\\obj\\",
+        "outputPath": "C:\\Users\\Aurora_Boreas\\Desktop\\PMod-Logger\\PmodLogger\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

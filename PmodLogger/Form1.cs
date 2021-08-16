@@ -17,6 +17,7 @@ namespace PmodLogger
             DialogResult rv = folderBrowserDialog_src.ShowDialog();
             if (rv == DialogResult.OK)
             {
+                button_start.BackColor = default(Color);
                 string dir_path = folderBrowserDialog_src.SelectedPath;
                 textBox_src.Text = dir_path;
             }
@@ -27,6 +28,7 @@ namespace PmodLogger
             DialogResult rv = folderBrowserDialog_dst.ShowDialog();
             if (rv == DialogResult.OK)
             {
+                button_start.BackColor = default(Color);
                 string dir_path = folderBrowserDialog_dst.SelectedPath;
                 textBox_dst.Text = dir_path;
             }
@@ -38,7 +40,6 @@ namespace PmodLogger
             DateTime final = new DateTime(2022, 1, 1);
             if (DateTime.Compare(today, final)<0)
             {
-                button_start.BackColor = default(Color);
                 bool rv = Directory.Exists(textBox_src.Text) && Directory.Exists(textBox_src.Text);
                 if (rv)
                 {
@@ -53,8 +54,6 @@ namespace PmodLogger
         private void Form1_Load(object sender, EventArgs e)
         {           
             button_start.BackColor = default(Color);
-            label1.BackColor = Color.FromArgb(0, 255, 255);
-            label2.BackColor = Color.FromArgb(0, 255, 255);
         }
     }
 }
