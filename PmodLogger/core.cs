@@ -5,7 +5,8 @@ namespace PmodLogger
 {
     /// <summary>
     /// this simple module is to classify SSVE PMod Mura CUC files
-    /// @ZL, 20210816
+    /// v0.01 @ZL, 20210816
+    /// v0.02 @ZL, 20210819. add more constraints to filter fill names
     /// </summary>
     class Dispatcher
     {
@@ -21,14 +22,21 @@ namespace PmodLogger
 
         private static (string, string) ParseFilename(string fname)
         {
-            string _sep = "_";
+            string _sep = "_", mc = "muraresult", cuc = "cucresult";
             int idx_pmod_name = 1;
             int idx_mura_cuc = 3;
 
-            string[] source = fname.Split(_sep);
-            string pmod_name = source[idx_pmod_name];
-            string mura_or_cuc = source[idx_mura_cuc];
-            return (pmod_name, mura_or_cuc);
+            if(fname.ToLower().Contains(mc) || fname.ToLower().Contains(cuc))
+            {
+                return (string.Empty, string.Empty);
+            }
+            else
+            {
+                string[] source = fname.Split(_sep);
+                string pmod_name = source[idx_pmod_name];
+                string mura_or_cuc = source[idx_mura_cuc];
+                return (pmod_name, mura_or_cuc);
+            }
         }
         private void CreateDirs(string pmod_name)
         {
