@@ -2,6 +2,7 @@
 using System.IO;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace PmodLogger
 {
@@ -38,6 +39,9 @@ namespace PmodLogger
         {
             DateTime today = DateTime.Today;
             DateTime final = new DateTime(2022, 1, 1);
+
+            Stopwatch timer = new Stopwatch();
+            timer.Start();
             if (DateTime.Compare(today, final)<0)
             {
                 bool rv = Directory.Exists(textBox_src.Text) && Directory.Exists(textBox_src.Text);
@@ -49,6 +53,10 @@ namespace PmodLogger
                 }
                 button_start.BackColor = Color.FromArgb(0, 255, 0);
             }
+            timer.Stop();
+            TimeSpan ts = timer.Elapsed;
+            string timeElapsed = String.Format("{0:00}:{1:00}:{2:00}:{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds/10);
+            textBox_runtime.Text = timeElapsed;
         }
 
         private void Form1_Load(object sender, EventArgs e)

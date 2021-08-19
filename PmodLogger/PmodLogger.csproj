@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <ApplicationIcon>草莓.ico</ApplicationIcon>
+    <ApplicationIcon>strayberry.ico</ApplicationIcon>
     <StartupObject />
     <Win32Resource />
   </PropertyGroup>

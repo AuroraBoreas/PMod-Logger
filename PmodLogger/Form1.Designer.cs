@@ -37,6 +37,7 @@ namespace PmodLogger
             this.folderBrowserDialog_dst = new System.Windows.Forms.FolderBrowserDialog();
             this.button_start = new System.Windows.Forms.Button();
             this.listBox_src = new System.Windows.Forms.ListBox();
+            this.textBox_runtime = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -93,10 +94,19 @@ namespace PmodLogger
             this.listBox_src.Size = new System.Drawing.Size(340, 184);
             this.listBox_src.TabIndex = 7;
             // 
+            // textBox_runtime
+            // 
+            this.textBox_runtime.Enabled = false;
+            this.textBox_runtime.Location = new System.Drawing.Point(77, 263);
+            this.textBox_runtime.Name = "textBox_runtime";
+            this.textBox_runtime.Size = new System.Drawing.Size(340, 23);
+            this.textBox_runtime.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.ClientSize = new System.Drawing.Size(429, 269);
+            this.ClientSize = new System.Drawing.Size(429, 291);
+            this.Controls.Add(this.textBox_runtime);
             this.Controls.Add(this.listBox_src);
             this.Controls.Add(this.button_start);
             this.Controls.Add(this.textBox_dst);
@@ -104,7 +114,7 @@ namespace PmodLogger
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "PMod-Logger @ZL, 20210816";
+            this.Text = "PMod Logger v0.01 @ZL, 20210816";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -121,6 +131,7 @@ namespace PmodLogger
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog_dst;
         private System.Windows.Forms.Button button_start;
         private System.Windows.Forms.ListBox listBox_src;
+        private System.Windows.Forms.TextBox textBox_runtime;
     }
 }
 
